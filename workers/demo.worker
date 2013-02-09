@@ -1,0 +1,19 @@
+runtime "ruby"
+
+name 'RailsIntegrationDemoWorker'
+exec 'demo.rb'
+
+full_remote_build true
+
+dir '../app'
+dir '../config'
+dir '../db'
+dir '../lib'
+dir '../vendor'
+
+file '../Gemfile'
+file '../Rakefile'
+file '../Gemfile.lock'
+file '../config.ru'
+
+gemfile '../Gemfile'
